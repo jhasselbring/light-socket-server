@@ -5,6 +5,7 @@
   "author": "JHasselbring",
   "private": true,
   "scripts": {
+    "pm2": "cross-env NODE_ENV=production node ./ace nuxtbuild && cross-env NODE_ENV=production node server.js",
     "serve:dev": "npm run dev",
     "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x node server.js",
     "build": "cross-env NODE_ENV=production node ./ace nuxtbuild",
